@@ -1,0 +1,52 @@
+*{
+    margin:0%;
+    padding:0%;
+
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+main{
+    height:100%;
+    width:100%;
+    display:flex;//main k andar k saare child disply direction row by default 
+    gap:20px;
+    section{// ye toh sabhi sescsstions k liye common 
+        height:100%;
+       flex-grow: 1;//matlab parent k andar jitn abhi space hai vo poora cover karenge
+       //that is 5 sections mila k poora parent ka area cover karenge 
+       transition:all 0.7s cubic-bezier(0.19,1,0.22,1);//smoothly flew grow karne k liye 
+       cursor:pointer;//to change the mouse cursor appearance when the user hovers over an element.
+      
+    }
+    section:hover{
+        flex-grow:3;
+    }
+    section:nth-child(1){//main k andar ka pehle 'SECTION' that is '1st' child out of all n children
+       background-image: url(./valleys.jpg);
+        background-size: cover;
+    }
+      section:nth-child(2){//main k andar ka dusra 'SECTION' that is '2st' child out of all n children
+        background-image: url(./deserts.jpg);
+        background-size: cover;
+    }
+
+      section:nth-child(3){
+     
+         background-image: url(./mountains.jpg);
+        background-size: cover;
+    }
+
+      section:nth-child(4){
+       
+           background-image: url(./coastal.jpg);
+       
+        background-size: cover;
+      }
+      section:nth-child(5){
+         background-image: url(./forests.jpg);
+        background-size: cover;
+    }
+
+}
