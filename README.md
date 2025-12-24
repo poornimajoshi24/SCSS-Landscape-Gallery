@@ -14,6 +14,7 @@ The project showcases hover-based expansion effects with smooth transitions.
 - HTML5
 - SCSS (Sass)
 - CSS Flexbox
+-  CSS
 
 ## Preview
 Hover over the landscape panels to see smooth expansion effects.
